@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notas Web</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <div id="contenido">
+        <div class="container">
+
+            <div class="cabecera">
+                <h1>Notas Web</h1>
+                <div class="modo contenedor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: none;"><path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z"></path></svg>    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <label for="nota">Nota:</label>
+                    <form  id="formulario">
+                            <label for="nota"></label>
+                            <textarea id="nota" class="u-full-width contenedor fondo_blanco" placeholder="Escribe algo"></textarea>
+                            <input type="submit" class="button u-full-width button-primary contenedor" value="Agregar">
+                    </form>
+                </div>
+                <div class="six columns">
+                    <h2>Mis notas</h2>
+                    <div id="lista-notas" class="contenedor fondo_blanco">
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!--#contenido-->
+
+    <footer>
+        <div>
+            <p>Inspirado en Tatis✨</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

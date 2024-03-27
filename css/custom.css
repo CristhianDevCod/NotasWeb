@@ -1,0 +1,169 @@
+/*Genericos*/
+.contenedor{
+    border-radius: 12px;
+    border: solid 1px var(--morado);
+    padding: 1rem;
+}
+
+.fondo_blanco{
+    background-color: var(--blanco);
+}
+
+/* Variable */
+:root {
+    --negro: #253236;
+    --tono-oscuro: #4a525a;
+    --gris: #84798c;
+    --morado: #ac81c0;
+    --morado-claro: #beabcc;
+    --tono-claro: #e7d5e7; 
+    --blanco: #f3f3f3f3;
+    --naranja: #ff4000;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+body{
+    background-color: var(--tono-claro);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#contenido {
+    margin-top: 40px;
+}
+.borrar-nota {
+    /* background-color: var(--morado); */
+    float: right;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--blanco);
+    color: var(--naranja);
+}
+
+.borrar-nota:hover {
+    background-color: var(--naranja);
+    color: var(--blanco);
+}
+
+.error {
+    background-color: var(--naranja);
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    color: var(--blanco);
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 45%;
+}
+
+/* Configurar la cabecera*/
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Botón de cambio de modo */
+.modo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--morado-claro);
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+}
+.modo:hover {
+    background-color: var(--morado);
+}
+.modo:hover svg path{
+    fill: var(--tono-claro);
+}
+
+/* Configurar el campo de texto*/
+#nota{
+    color: var(--naranja);
+}
+
+/* Botón para agregar */
+#formulario input{
+    border: solid 1px var(--morado);
+    background-color: var(--morado-claro);
+}
+#formulario input:hover{
+    background-color: var(--morado);
+    border: solid 1px var(--tono-claro);
+    color: var(--naranja);
+}
+
+/* campo de notas */
+#lista-notas{
+    width: 90%;
+    height: 10%;
+}
+#lista-notas li{
+    margin-left: .5rem;
+    color: var(--negro);
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+}
+/*Transformar la primera letra del texto a mayúscula*/
+li:first-letter {
+    text-transform: uppercase;
+}
+li::marker{
+    color: var(--naranja);
+}
+
+
+/* Edición de footer */
+footer{
+    background-color: var(--gris);
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    font-weight: bold;
+}
+footer p{
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    color: var(--blanco);
+}
+
+
+/* configuración para el modo nocturno*/
+/*titulo*/
+.noche h1, 
+.noche h2,
+.noche .columns label{
+    color: var(--blanco);
+}
+.noche{
+    background-color: var(--tono-oscuro);
+}
+.noche #nota, 
+.noche #lista-notas{
+    background-color: var(--negro);
+    color: var(--morado);
+}
+.noche #nota::placeholder,
+.noche #lista-notas li {
+    color: var(--morado);
+}
+.noche footer{
+    background-color: var(--negro);
+}
